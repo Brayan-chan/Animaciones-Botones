@@ -1,0 +1,58 @@
+.cssbuttons-io-button {
+    background: #a370f0; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-family: inherit; /* Fuente del texto */
+    padding: 0.35em; /* Relleno del botón */
+    padding-left: 1.2em; /* Relleno izquierdo */
+    font-size: 17px; /* Tamaño de fuente */
+    font-weight: 500; /* Grosor de fuente */
+    border-radius: 0.9em; /* Borde del botón */
+    border: none; /* Borde del botón */
+    letter-spacing: 0.05em; /* Espaciado entre letras */
+    display: flex; /* Elemento flex */
+    align-items: center; /* Alinear elementos */
+    box-shadow: inset 0 0 1.6em -0.6em #714da6; /* Sombra del botón */
+    overflow: hidden; /* Desbordamiento */
+    position: relative; /* Posición relativa */
+    height: 2.8em; /* Alto del botón */
+    padding-right: 3.3em; /* Relleno derecho */
+    cursor: pointer; /* Cursor del ratón */ 
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+.cssbuttons-io-button .icon {
+    background: white; /* Color de fondo */
+    margin-left: 1em; /* Margen izquierdo */
+    position: absolute; /* Posición absoluta */
+    display: flex; /* Elemento flex */
+    align-items:center; 
+    justify-content: center; /* Alinear elementos */
+    height: 2.2em; /* Alto del botón */
+    width: 2.2em; /* Ancho del botón */
+    border-radius: 0.7em; /* Borde del botón */
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9; /* Sombra del botón */
+    right: 0.3em; /* Posición derecha */
+    transition: all 0.3s; /* Transición */
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em); /* Ancho del botón */
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em; /* Ancho del SVG */
+    transition: transform 0.3s; /* Transición */   
+    color: #7b52b9; /* Color del SVG */
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em); /* Transición del SVG */
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95); /* Escala del botón */
+}
